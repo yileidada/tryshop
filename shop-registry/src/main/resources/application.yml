@@ -1,0 +1,14 @@
+server:
+  port: 9000
+spring:
+  application:
+    name: yilei-tryshop
+eureka:
+  client:
+    fetch-registry: false #要不要去注册中心获取其他服务的地址
+    register-with-eureka: false #自己就是注册中心，不用注册自己
+    service-url:
+      defaultZone: http://127.0.0.1:9000/eureka
+  server:
+    enable-self-preservation: false #关闭自我保护
+    eviction-interval-timer-in-ms: 5000 #每隔5秒进行一次服务列表清除

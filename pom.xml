@@ -5,6 +5,10 @@
     <groupId>com.yilei</groupId>
     <artifactId>tryshop</artifactId>
     <version>1.0.0-SNAPSHOT</version>
+    <modules>
+        <module>shop-registry</module>
+        <module>shop-gateway</module>
+    </modules>
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
