@@ -11,14 +11,15 @@ spring:
   cloud:
     nacos:
       discovery:
-        password: nacos
-        username: nacos
         server-addr: 192.168.1.102:8848
-        file-extension: yaml
-        namespace: public
 dubbo:
   protocol:
     name: dubbo
-    port: 20880
+    port: -1
+    id: dubbo
   scan:
     base-packages: com.yilei.tryshop.apiservice
+  registry:
+    address: spring-cloud://localhost
+  cloud:
+    subscribed-services: yilei-tryshop
